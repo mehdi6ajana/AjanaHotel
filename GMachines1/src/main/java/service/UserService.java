@@ -94,7 +94,7 @@ public class UserService implements IDao<User> {
     public List<User> findAll() {
         List<User> clients = new ArrayList<User>();
 
-        String sql = "select * from User";
+        String sql = "select * from i060easwgwave5ni.user";
         try {
             PreparedStatement ps = Connexion.getInstane().getConnection().prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
